@@ -1,0 +1,64 @@
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  background: #cccccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.secondSubtitle {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.mainButton {
+  text-align: center;
+}
+
+.mainButton button {
+  margin-bottom: 30px;
+  padding: 8px;
+  background: #2ba6cb;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.imageList {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.address {
+  margin-bottom: 16px;
+}
+
+.address p {
+  font-size: 16px;
+  line-height: 24px;
+}

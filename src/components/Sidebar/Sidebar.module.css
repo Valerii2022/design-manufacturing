@@ -1,0 +1,140 @@
+.sidebar {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+}
+
+.link {
+  color: #2ba6cb;
+  background: #f2f2f2;
+  font-size: 16px;
+  padding: 10px 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  text-align: left;
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover {
+    color: #f2f2f2;
+    background-color: #2ba6cb;
+  }
+}
+
+.title {
+  color: #f2f2f2;
+  background: #222222;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  padding: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.text span {
+  font-weight: 700;
+}
+
+.linkWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.inputWrap {
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 5px;
+  padding: 5px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 0 0 5px;
+  padding: 5px;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgb(10 10 10 / 10%);
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+.typeText {
+  margin-left: 8px;
+  width: 116px;
+  height: 21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #555;
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+}
+
+.button {
+  margin-bottom: 30px;
+  padding: 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.disabled {
+  background: #e8e8e8;
+  color: #8e8e8e;
+}
+
+.active {
+  background: #2ba6cb;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+  .input {
+    width: 200px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px 0 #4a4a4a;
+}
+
+.container:hover .leftNav {
+  opacity: 0.8;
+}
+
+.container:hover .rightNav {
+  opacity: 0.8;
+}
+
+.leftNav {
+  filter: grayscale(60%);
+  transition: opacity 250ms linear;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.rightNav {
+  filter: grayscale(60%);
+  transition: opacity 250ms linear;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 10;
+  cursor: pointer;
+}

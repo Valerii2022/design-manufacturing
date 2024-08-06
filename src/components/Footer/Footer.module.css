@@ -1,0 +1,33 @@
+.footer {
+  padding: 10px 0;
+  background: #222222;
+  color: #f2f2f2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1000px;
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.separetor {
+  margin: 0 4px;
+}
+
+@media screen and (max-width: 380px) {
+  .separetor {
+    display: none;
+  }
+
+  .textWrapper {
+    flex-direction: column;
+  }
+}
