@@ -1,8 +1,8 @@
 {
-  "name": "design-manufacturing-oakes",
+  "name": "design-manufacturing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Valerii2022.github.io/design-manufacturing-oakes/",
+  "homepage": "https://Valerii2022.github.io/design-manufacturing/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
