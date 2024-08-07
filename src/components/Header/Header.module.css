@@ -1,0 +1,138 @@
+.container {
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  min-height: 100%;
+  display: grid;
+}
+
+.logo {
+  padding: 0 8px;
+  display: inline-block;
+}
+
+.headerPhone p:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.phoneLink {
+  color: var(--primary-bg-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.phoneLink:hover {
+  color: var(--accent-color);
+}
+
+.mobileMenuBtn {
+  margin-top: 35px;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+}
+
+.mobileMenuTitle {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1.188;
+  color: var(--primary-bg-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menuIcon {
+  position: relative;
+  margin-right: 18px;
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: var(--primary-bg-color);
+}
+
+.menuIcon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  width: 14px;
+  height: 2px;
+  background-color: var(--primary-bg-color);
+}
+
+.menuIcon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  width: 14px;
+  height: 2px;
+  background-color: var(--primary-bg-color);
+}
+
+.linkWrapper {
+  background-color: var(--secondary-color);
+  transition: transform 1000ms linear;
+}
+
+.link {
+  width: 100%;
+  display: block;
+  color: var(--primary-bg-color);
+  font-size: 16px;
+  background-color: transparent;
+  padding: 7px 15px;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+@media screen and (max-width: 639px) {
+  .welder {
+    display: none;
+  }
+
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 1000px;
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .welder {
+    height: 90px;
+    justify-self: center;
+  }
+
+  .contacts {
+    padding: 10px 8px 0 8px;
+    color: var(--primary-bg-color);
+    font-size: 20px;
+    justify-self: end;
+  }
+
+  .mobileMenuBtn {
+    display: none;
+  }
+
+  .linkWrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 17px;
+  }
+}

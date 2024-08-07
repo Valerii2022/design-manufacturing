@@ -1,0 +1,136 @@
+.container {
+  background: var(--primary-bg-color);
+  padding: 16px;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.homeLink {
+  color: var(--accent-color);
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: transform var(--transition);
+}
+
+.homeLink:hover {
+  transform: scale(1.1);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-secondary-color);
+}
+
+.itemInfoWrap {
+  display: flex;
+  gap: 16px;
+}
+
+.imageList,
+.descriptionList {
+  flex: 1 1 50%;
+}
+
+.imageList {
+  padding-top: 20px;
+}
+
+.descriptionList {
+  padding-bottom: 20px;
+}
+
+.imageList img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.imageList img:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  color: #222222;
+  font-size: 18px;
+  background: var(--third-bg-color);
+  margin-bottom: 20px;
+  padding: 5px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.blockTitle {
+  font-size: 18px;
+  color: var(--second-accent-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.descriptionList p {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.descriptionList span {
+  font-weight: 700;
+}
+
+.descriptionTitleWrap {
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 12px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-secondary-color);
+  line-height: 18px;
+}
+
+.warningText {
+  font-size: 18px;
+  color: var(--second-accent-color);
+  font-weight: 700;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-secondary-color);
+  line-height: 24px;
+}
+
+.addressBox p {
+  font-style: 16px;
+  line-height: 1.6;
+}
+
+.addressBox address {
+  margin-bottom: 16px;
+}
+
+.addressBox .subtitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 639px) {
+  .itemInfoWrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .imageList,
+  .descriptionList {
+    padding: 20px 0;
+  }
+}
