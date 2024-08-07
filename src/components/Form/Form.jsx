@@ -6,6 +6,8 @@ const ContactForm = () => {
   // const [code, setCode] = useState('');
   // const [inputCode, setInputCode] = useState('');
 
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
   const initialValues = { name: '', email: '', phone: '', comments: '' };
 
   const validationSchema = Yup.object({
@@ -13,7 +15,8 @@ const ContactForm = () => {
       .email('Invalid name format')
       .required('Name is required'),
     email: Yup.string()
-      .email('Invalid email address')
+      // .email('Invalid email address')
+      .matches(emailPattern, 'Invalid email format')
       .required('Email is required'),
     phone: Yup.string()
       .email('Invalid phone format')
