@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FilterContext } from 'context/FilterContext';
 import css from './Sidebar.module.css';
-import Form from 'components/Form/Form';
+import ContactForm from 'components/Form/Form';
 
 const Sidebar = () => {
   const { setFilter } = useContext(FilterContext);
@@ -134,7 +134,7 @@ const Sidebar = () => {
           Simply fill out and submit the form below to send us an email.{' '}
           <span>All fields are required.</span>
         </p>
-        <Form />
+        <ContactForm />
       </div>
     </aside>
   );
