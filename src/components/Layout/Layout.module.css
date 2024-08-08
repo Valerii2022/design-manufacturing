@@ -24,6 +24,31 @@
   grid-area: 'footer';
 }
 
+.scrollBtn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  opacity: 0.3;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 8px solid var(--primary-bg-color);
+  border-top: 8px solid var(--primary-bg-color);
+  transform: rotate(45deg);
+}
+
 @media screen and (min-width: 640px) {
   .container {
     grid-template: minmax(140px, auto) 1fr minmax(22px, auto) / 1fr;

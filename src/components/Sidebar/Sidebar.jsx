@@ -1,8 +1,9 @@
 import { useContext, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FilterContext } from 'context/FilterContext';
-import css from './Sidebar.module.css';
+import { scrollToTop } from 'helpers/scrollToTop';
 import ContactForm from 'components/Form/Form';
+import css from './Sidebar.module.css';
 
 const Sidebar = () => {
   const { setFilter } = useContext(FilterContext);
@@ -10,6 +11,7 @@ const Sidebar = () => {
   const location = useLocation();
 
   const handleProductsLinksClick = e => {
+    scrollToTop();
     setFilter(e.target.id);
     navigate('/content');
   };
