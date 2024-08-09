@@ -59,6 +59,10 @@
 }
 
 .typeText {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   width: 120px;
   height: 32px;
   padding-left: 12px;

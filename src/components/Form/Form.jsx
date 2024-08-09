@@ -32,23 +32,27 @@ const ContactForm = () => {
     phone: Yup.string()
       .matches(phonePattern, 'Format XXX-XXX-XXXX')
       .required('Phone is required'),
-    code: Yup.string().matches(code, 'Invalid code').required('Type the code'),
+    code: Yup.string()
+      .test('code-match', 'Invalid code', function (value) {
+        return value === code;
+      })
+      .required('Type the code'),
   });
 
-  const onSubmit = (values, { setSubmitting, resetForm }) => {
-    console.log('Form data', values);
-    resetForm();
-    setMessageActive(true);
-    setSubmitting(false);
+  const randomCode = () => {
+    const newCode = Math.random().toString(36).substring(3, 9);
+    setCode(newCode);
   };
 
   useEffect(() => {
     randomCode();
   }, []);
 
-  const randomCode = () => {
-    const code = Math.random().toString(36).substring(3, 9);
-    setCode(code);
+  const onSubmit = (values, { setSubmitting, resetForm }) => {
+    console.log('Form data', values);
+    resetForm();
+    setMessageActive(true);
+    setSubmitting(false);
   };
 
   return (
@@ -116,7 +120,7 @@ const ContactForm = () => {
               <button
                 className={css.resetCodeBtn}
                 type="button"
-                onClick={() => randomCode()}
+                onClick={randomCode}
               >
                 <img src={resetImage} alt="Reset" width={24} height={24} />
               </button>
@@ -153,7 +157,7 @@ const ContactForm = () => {
                 type="button"
                 disabled={isSubmitting}
                 className={css.button}
-                onClick={() => resetForm()}
+                onClick={resetForm}
               >
                 Reset Form
               </button>
