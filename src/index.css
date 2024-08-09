@@ -9,7 +9,7 @@
   --border-color: #a6a6a6;
   --border-secondary-color: #e8e8e8;
   --shadow-color: rgba(10, 10, 10, 0.1);
-  --transition: 300ms linear;
+  --transition: 500ms linear;
 }
 
 * {

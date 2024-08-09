@@ -1,9 +1,9 @@
 .container {
   margin: 0 auto;
-  padding: 15px 0;
   text-align: center;
   min-height: 100%;
   display: grid;
+  position: relative;
 }
 
 .logo {
@@ -27,12 +27,14 @@
 }
 
 .mobileMenuBtn {
-  margin-top: 35px;
+  z-index: 100;
+  padding-top: 35px;
+  padding-bottom: 15px;
   align-self: end;
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: transparent;
+  background-color: var(--secondary-color);
 }
 
 .mobileMenuTitle {
@@ -75,7 +77,18 @@
 
 .linkWrapper {
   background-color: var(--secondary-color);
-  transition: transform 1000ms linear;
+  transition: transform var(--transition);
+  transform: translateY(0);
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+}
+
+.open {
+  transform: translateY(113%);
+  transition: transform var(--transition);
+  opacity: 1;
 }
 
 .link {
@@ -91,6 +104,12 @@
 }
 
 @media screen and (max-width: 639px) {
+  .logoLink {
+    z-index: 100;
+    background-color: var(--secondary-color);
+    padding-top: 15px;
+  }
+
   .welder {
     display: none;
   }
@@ -104,6 +123,7 @@
   .container {
     max-width: 1000px;
     grid-template: 1fr / 1fr 1fr 1fr;
+    padding: 15px 0;
   }
 
   .logo {

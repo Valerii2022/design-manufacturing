@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className={css.container}>
-      <NavLink to="/">
+      <NavLink to="/" className={css.logoLink}>
         <div className={css.logo}>
           <img src={logo.mainLogo} alt="Logo" width={'200px'} />
         </div>
@@ -45,38 +45,51 @@ const Header = () => {
         <p className={css.mobileMenuTitle}>menu</p>
         <span className={css.menuIcon}></span>
       </button>
-      {menu && (
-        <div
-          style={{ transform: 'translateY(0)' }}
-          className={css.linkWrapper}
-          onClick={handleProductsLinksClick}
-        >
+      <ul
+        className={menu ? `${css.linkWrapper} ${css.open}` : css.linkWrapper}
+        onClick={handleProductsLinksClick}
+      >
+        <li>
           <button type="button" className={css.link}>
             View All
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Feed Bunks & Bale Feeders
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Feed Through Panels
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Sucker Rod Panels & Gates
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Freestand Panels & Windbreak
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Pipe, Sucker Rods, & Posts
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Calf Shelter & Hopper Cones
           </button>
+        </li>
+        <li>
           <button type="button" className={css.link}>
             Calf Catcher
           </button>
-        </div>
-      )}
+        </li>
+      </ul>
     </header>
   );
 };
