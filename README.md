@@ -3,7 +3,7 @@
 Website for small local company in Oakes ND, USA.
 
 Click link:
-[Design Manufacturing](https://valerii2022.github.io/design-manufacturing-oakes/)
+[Design Manufacturing](https://design-manufacturing.vercel.app/)
 
 ## Two versions for mobile and desktop. Breakpoint on 640px.
 
