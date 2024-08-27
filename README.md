@@ -20,6 +20,7 @@ This project uses the following technologies and libraries:
 - **React Router**: For handling routing within the application.
 - **Formik**: For buildings forms.
 - **Yup**: Schema builder for runtime value parsing and validation.
+- **React-Image-Gallery**: Slider for popular images on Home Page.
 
 ## Installation
 
