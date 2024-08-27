@@ -8,25 +8,32 @@ import { logo } from '../../image/logo';
 const images = [
   {
     original: products.shop,
+    alt: 'Shop',
   },
   {
     original: products.bale,
+    alt: 'Bale Feeders',
   },
   {
     original: products.post1,
+    alt: 'Posts',
   },
   {
     original: products.cone,
+    alt: 'Hopper Cone',
   },
   {
     original: products.bunk2,
+    alt: 'Bunk',
   },
 
   {
     original: products.feed,
+    alt: 'Feed Through Panel',
   },
   {
     original: products.free4,
+    alt: 'Freestanding Panels',
   },
 ];
 
